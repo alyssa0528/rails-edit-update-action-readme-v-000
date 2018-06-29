@@ -473,3 +473,11 @@ Processing by PostsController#edit as HTML
   Parameters: {"id"=>"1"}
   Rendered posts/edit.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1/edit" for 37.228.252.219 at 2018-06-29 13:33:02 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 1.2ms)
